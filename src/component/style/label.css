@@ -1,0 +1,16 @@
+.flex_style_of_label{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.add_icon_recycle_bin{
+    background-image: url(../../../public/icons8-recycle-bin-24.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 47px;
+    height: 37px;
+    background-color: orange;
+    border-color: #d39a4a
+}
+

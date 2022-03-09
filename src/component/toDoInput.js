@@ -1,17 +1,15 @@
 import { Button } from "react-bootstrap";
 
-function Header() {
+function ToDoInput() {
   return (
     <>
-      <div className="d-flex justify-content-center ">
-        <div
-          className="d-flex justify-content-center mt-2 border p-2"
-          style={{ width: "70%" }}
-        >
-          <div
-            class="input-group input-group-sm mb-3 "
-            style={{ width: "50%" }}
-          >
+      <div className="">
+        {/* design of to do input*/}
+        <div className=" mt-2 border p-2 add_margin_auto width_70">
+          <h1 className="display-6 style_of_text_to_do_input">To Do Input</h1>
+
+          {/*css bootstrap input group */}
+          <div class="input-group input-group-sm mb-3 add_margin_auto width_50">
             <div class="input-group-prepend">
               <span class="input-group-text" id="inputGroup-sizing-sm ">
                 &#128209;
@@ -31,4 +29,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default ToDoInput;
