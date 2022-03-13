@@ -1,6 +1,11 @@
+import { useState } from "react";
 import { Button } from "react-bootstrap";
+// import Label from "./label.js";
 
-function ToDoInput() {
+
+export function ToDoInput() {
+  const[valueInput,setValueInput]=useState("");
+  const xx="";
   return (
     <>
       <div className="">
@@ -20,8 +25,9 @@ function ToDoInput() {
               class="form-control "
               aria-label="Small"
               aria-describedby="inputGroup-sizing-sm"
+              onChange={(x)=>setValueInput(x)}
             ></input>
-            <Button>Add</Button>
+            <Button onClick={()=>{xx=valueInput;}}>Add</Button>
           </div>
         </div>
       </div>
@@ -29,4 +35,6 @@ function ToDoInput() {
   );
 }
 
-export default ToDoInput;
+
+
+ 
