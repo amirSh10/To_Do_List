@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Button } from "react-bootstrap";
+import Label from "./label";
 
 export function ToDoInput(props) {
-  const [A,setA]=useState("")
-
+  const [A,setA]=useState("");
   return (
     <>
       <div className="">
@@ -18,16 +18,20 @@ export function ToDoInput(props) {
                 &#128209;
               </span>
             </div>
+            {/* {id:`${props.index}`,do:[A]} */}
             <input
               type="text"
               class="form-control "
               aria-label="Small"
               aria-describedby="inputGroup-sizing-sm"
               onChange={(x)=>setA(x.target.value)}
+              value={A}
             ></input>
             <Button onClick={()=>{
-              props.setValueInput(A)
+              props.setValueInput((x)=>[...x,{id:`${props.index}`,do:A}])
               setA("")
+              props.setNumber(props.number+1)
+              props.setIndex(props.index+1)
               }}>Add</Button>
           </div>
         </div>

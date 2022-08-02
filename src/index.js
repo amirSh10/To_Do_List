@@ -16,7 +16,9 @@ import "./component/style/toDoInput.css"
 import "./component/style/label.css"
 
 function App(){
-  const[valueInput,setValueInput]=useState("");
+  const[valueInput,setValueInput]=useState([
+  ]);
+  console.log(valueInput)
   return(
   <>
    <ToDoList
