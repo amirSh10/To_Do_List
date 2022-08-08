@@ -22,7 +22,7 @@ function ToDoList(props) {
       <div className=" mt-2 border p-2 add_margin_auto width_70">
         <h1 className="display-6 style_of_text_to_do_input">To Do List</h1>
         
-        {number>0? <Label valueInput={props.valueInput} setValueInput={props.setValueInput} index={index} setIndex={setIndex}/>
+        {number>0? <Label valueInput={props.valueInput} setValueInput={props.setValueInput} setReload={props.setReload} reload={props.reload} index={index} setIndex={setIndex}/>
           : <h1 style={{textAlign:"center",fontSize:"60px",color:"rgb(68, 157, 68)"}}>"just do It:)"</h1>
         }
       </div>
